@@ -1,10 +1,9 @@
 module.exports = {
     dialect:'mysql',
-    host:'mysql669.umbler.com',
-    port:41890,
-    username:'maudev1',
+    host:'localhost',
+    username:'root',
     password:'juniorsk8',
-    database:'cadastros_bts',
+    database:'teste',
     define:{
         timestamps:true,
         underscored:true
