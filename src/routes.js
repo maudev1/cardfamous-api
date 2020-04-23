@@ -3,13 +3,10 @@ const UserController = require('./controllers/UserControllers');
 
 const routes = express.Router();
 
-//routes.get('/', (req, res) =>{
-//    return res.json({hello:'World'});
-// 
-//})
-//routes.post('/users', UserController.store)
+//adicionar novo usuario
+routes.post('/users', UserController.store);
 
-routes.post('/users', UserController.store)
-
+//buscar todos usuarios
+routes.get('/find', UserController.find);
 
 module.exports = routes;
