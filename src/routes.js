@@ -1,6 +1,6 @@
 const express = require('express');
 const UserController = require('./controllers/UserControllers');
-const CardController = require('./controllers/CardControllers')
+const CardController = require('./controllers/CardControllers');
 
 const routes = express.Router();
 

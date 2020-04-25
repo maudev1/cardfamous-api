@@ -2,30 +2,52 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-   return queryInterface.createTable('cards', {
-     id:{
+    return queryInterface.createTable('cards', {
+      id: {
+        type: Sequelize.INTEGER,
+        primaryKey: true,
+        autoIncrement: true,
+        allowNull: false,
 
-     },
-     name:{
+      },
+      name: {
+        type: Sequelize.STRING,
+        allowNull: false
 
-     },
-     type:{
+      },
+      type: {
+        type: Sequelize.STRING,
+        allowNull: false,
 
-     },
-     str:{
+      },
 
-     },
-     dex:{
+      level: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
 
-     },
-     int:{
+      },
 
-     }
+      str: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
 
-   })
+      },
+      dex: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+
+      },
+      int: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+
+      }
+
+    })
   },
 
   down: (queryInterface, Sequelize) => {
-   
+    return queryInterface.dropTable('cards');
+
   }
 };
