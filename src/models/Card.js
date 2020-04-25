@@ -1,18 +1,18 @@
 const { Model, DataTypes } = require('sequelize');
 
-class Card extends Model{
+class Card extends Model {
     static init(sequelize) {
         super.init({
             name: DataTypes.STRING,
             type: DataTypes.STRING,
-            level: DataTypes.INTEGER,
-            str: DataTypes.INTEGER,
-            dex: DataTypes.INTEGER,
-            int: DataTypes.INTEGER
+            level:DataTypes.INTEGER,
+            str:DataTypes.INTEGER,
+            dex:DataTypes.INTEGER,
+            int:DataTypes.INTEGER
         },
-        {
-            sequelize
-        })
+            {
+                sequelize
+            })
     }
 }
 
